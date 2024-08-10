@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    
+        <style>
+            body{
+                background-color: rgb(188, 152, 136);
+                margin-left: 400px;
+                margin-top: 30PX;
+                font-size: 22px;
+                
+            }
+            h1{
+                text-shadow: 8px 10px 5px rgb(98, 2, 2);
+                text-decoration: underline;
+                color: rgb(231, 216, 220);
+            }
+    
+
+            input
+            {
+                padding: 10px;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                font-size: 16px;
+            }
+             input:invalid
+            {
+                border: 2px solid black;
+                
+            }
+            input:valid
+            {
+                border: 2px solid black;
+        
+            } 
+            input:required
+            {
+                border: 2px solid black;
+                
+            }
+            input:optional
+            {
+                border: 2px solid rgb(221, 221, 230);
+            }
+        </style>
+        <body>
+            <h1>Mahindra and Mahindra Enquiry</h1>
+        <form>
+            <label>First Name</label> <br>
+            <input type="text" name="username" required> <br> <br><br>
+            <label>Last Name</label> <br>
+            <input type="text" name="username" required> <br> <br><br>
+            <label>Mobile Number</label> <br>
+            <input type="number" name="number" required> <br> <br><br>
+
+            <label>Email</label> <br>
+            <input type="email" name="email" required> <br> <br><br>
+            
+            <label>Select Models</label> <br>
+                <input list="model">
+                <datalist id="model">
+                    <option value="Scorpio"></option>
+                        <option value="Thar"></option>
+                        <option value="Bolero"></option>
+                        <option value="XUV700"></option>
+                        <option value="XUV300"></option>
+                        </datalist>
+                <br><br>
+            
+            <input type="submit" value="SUBMIT"/>
+        </form>
+</body>
+</html>
